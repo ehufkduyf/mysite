@@ -112,7 +112,7 @@ header {
 }
 
 .button:active {
-    background-color: #ace4ec; /* Изменяет цвет фона на темный при нажатии на кнопку */
+    background-color: #4a21ff; /* Изменяет цвет фона на темный при нажатии на кнопку */
     transform: scale(0.98); /* Уменьшает размер кнопки при нажатии для эффекта нажатия */
     border-color: #1f1f1f; /* Изменяет цвет границы на темный при нажатии */
 }
@@ -168,7 +168,7 @@ header {
 
 .label-long-element {
     padding: 0px 7px;
-    background: #ace4ec;
+    background: #4a21ff;
     border-radius: 7px;
     margin-right: 40px;
 }
@@ -262,7 +262,7 @@ footer {
     display: flex;
     width: fit-content;
     padding: 0px 7px;
-    background: #ace4ec;
+    background: #4a21ff;
     border-radius: 7px;
     margin-bottom: 27px;
 }
@@ -354,7 +354,7 @@ input[type="submit"] {
     padding: 20px 35px;
     gap: 10px;
     /* Green */
-    background: #ace4ec;
+    background: #4a21ff;
     border-radius: 14px;
 
     font-family: 'Space Grotesk';
@@ -479,7 +479,7 @@ flex-grow: 0;
 padding: 0px 7px;
 margin: 0;
 /* Green */
-background: #ace4ec;
+background: #4a21ff;
 border-radius: 7px;
 font-size: 30px;
 
@@ -515,7 +515,7 @@ width: 600px;
 height: 310px;
 
 /* Grey */
-background: #ace4ec;
+background: #4a21ff;
 /* Dark */
 border: 1px solid #191A23;
 box-shadow: 0px 5px 0px #191A23;
@@ -584,8 +584,8 @@ flex-grow: 0;
 
 }
 .cards-section #card_two{
-    background:#ace4ec ;
+    background:#4a21ff ;
 }
 .cards-section #card_two #heading h3{
-    background: #ace4ec;
+    background: #4a21ff;
 }
