@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<!-- Определяет тип документа и версию HTML (HTML5) -->
+<html lang="ru">
+  <!-- Начало HTML-документа, задает язык страницы как русский -->
+  <head>
+    <meta charset="UTF-8" />
+    <!-- Устанавливает кодировку документа в UTF-8 для поддержки всех символов -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Устанавливает мета-тег для адаптивного дизайна на мобильных устройствах -->
+    <title>501 rool Design (Community)</title>
+    <!-- Устанавливает заголовок страницы, который отображается на вкладке браузера -->
+    <link rel="stylesheet" href="/static/css/stylefor.css" />
+    <!-- Подключает файл стилей (CSS) для оформления страницы -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <!-- Предварительное соединение с Google Fonts для ускорения загрузки -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Предварительное соединение с Google Fonts (с использованием кросс-доменных запросов) -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Подключает шрифт Space Grotesk с разными весами -->
+  </head>
+  <body>
+    <!-- Начало тела документа -->
+    <header>
+      <!-- Начало заголовка страницы -->
+      <div class="nav_bar">
+        <!-- Контейнер для навигационной панели -->
+        <div class="logo">
+          <!-- Контейнер для логотипа -->
+          <img src="{{ url_for('static', filename='images/logo.svg') }}" />
+          <!-- Вставляет изображение логотипа -->
+        </div>
+        <div class="menu">
+          <!-- Контейнер для меню навигации -->
+          <ul class="menu-item">
+            <!-- Ненумерованный список для пунктов меню -->
+            <li><a href="#">About 501</a></li>
+            <!-- Пункт меню "О нас" -->
+            <li><a href="#">501</a></li>
+            <!-- Пункт меню "Услуги" -->
+            <li><a href="#">501</a></li>
+            <!-- Пункт меню "Случаи использования" -->
+            <li><a href="#">501</a></li>
+            <!-- Пункт меню "Цены" -->
+            <li><a href="#">metraeno</a></li>
+            <!-- Пункт меню "Блог" -->
+          </ul>
+          <button type="button" class="button">Request a quote</button>
+          <!-- Кнопка "Запросить квоту" -->
+        </div>
+      </div>
+    </header>
+    <main>
+      <!-- Начало основного содержимого страницы -->
+      <div class="main-window">
+        <div class="main-window-left">
+          <div>
+            <h1>Navigating the digital landscape for success</h1>
+          </div>
+          <div>
+            <p>
+              Our digital marketing agency helps businesses grow and succeed
+              online through a range of services including SEO, PPC, social
+              media marketing, and content creation.
+            </p>
+          </div>
+          <div>
+            <button type="button" id="button-1">Book a consultation</button>
+          </div>
+        </div>
+        <div>
+          <img
+            src="{{ url_for('static', filename='images/illustration.svg') }}"
+          />
+        </div>
+      </div>
+      <div>
+        <ul class="brands">
+          <li>
+            <img
+              src="{{ url_for('static', filename='/images/amazon.svg') }}"
+              alt="amazon"
+            />
+          </li>
+          <li>
+            <img
+              src="{{ url_for('static', filename='/images/scribble.svg') }}"
+              alt="scribble"
+            />
+          </li>
+          <li>
+            <img
+              src="{{ url_for('static', filename='/images/hubspot.svg') }}"
+              alt="hubspot"
+            />
+          </li>
+          <li>
+            <img
+              src="{{ url_for('static', filename='/images/notion.svg') }}"
+              alt="notion"
+            />
+          </li>
+          <li>
+            <img
+              src="{{ url_for('static', filename='/images/netflix.svg') }}"
+              alt="netflix"
+            />
+          </li>
+          <li>
+            <img
+              src="{{ url_for('static', filename='/images/zoom.svg') }}"
+              alt="zoom"
+            />
+          </li>
+        </ul>
+      </div>
+      <div class="long-element">
+        <div class="label-long-element">
+          <h2>metraeno</h2>
+        </div>
+        <div class="text-long-element">
+          <p>
+            At our digital marketing agency, we offer a range of services to
+            help businesses grow and succeed online. These services include:
+          </p>
+        </div>
+      </div>
+      <div class="services-block">
+        <ul class="cards-section" id="cards-section-one">
+          <li id="card_one">
+            <div id="headingNlink">
+              <div id="heading">
+                <h3>Search engine</h3>
+                <h3>optimization</h3>
+              </div>
+              <div id="link">
+                <img
+                  src="{{ url_for('static', filename='images/vector.svg') }}"
+                  alt="logo"
+                />
+                <a href="#">Learn more</a>
+              </div>
+            </div>
+            <img
+              src="{{ url_for('static', filename='images/mag_glass.svg') }}"
+              alt="tokyo"
+            />
+          </li>
+          <li id="card_two">
+            <div id="headingNlink">
+              <div id="heading">
+                <h3>Pay-per-day</h3>
+                <h3>advertising</h3>
+              </div>
+              <div id="link">
+                <img
+                  src="{{ url_for('static', filename='images/vector.svg') }}"
+                  alt="logo"
+                />
+                <a href="#">Learn more</a>
+              </div>
+            </div>
+            <img
+              src="{{ url_for('static', filename='images/tokyo.svg') }}"
+              alt="tokyo"
+            />
+          </li>
+        </ul>
+      </div>
+    </main>
+    <footer>
+      <div class="footer_nav_bar">
+        <div class="footer_nav_bar_menu">
+          <div>
+            <img
+              src="{{ url_for('static', filename='images/logo2.svg') }}"
+              class="logo2"
+            />
+          </div>
+          <div>
+            <ul class="menu" id="menu-footer">
+              <!-- Ненумерованный список для пунктов меню -->
+              <li><a href="#">metraeno</a></li>
+              <!-- Пункт меню "О нас" -->
+              <li><a href="#">artem</a></li>
+              <!-- Пункт меню "Услуги" -->
+              <li><a href="#">izmalkov</a></li>
+              <!-- Пункт меню "Случаи использования" -->
+              <li><a href="#">metra</a></li>
+              <!-- Пункт меню "Цены" -->
+              <li><a href="#">eno</a></li>
+              <!-- Пункт меню "Блог" -->
+            </ul>
+          </div>
+          <div>
+            <img
+              src="{{ url_for('static', filename='images/s1.svg') }}"
+              class="logo-s"
+            />
+            <img
+              src="{{ url_for('static', filename='images/s2.svg') }}"
+              class="logo-s"
+            />
+            <img
+              src="{{ url_for('static', filename='images/s3.svg') }}"
+              class="logo=s"
+            />
+          </div>
+        </div>
+        <div class="footer_nav_bar_info">
+          <div class="footer_nav_bar_info_left">
+            <div class="contact-us">
+              <h4>metraeno:</h4>
+            </div>
+            <div class="info">
+              <p>Email: metraeno48@gmail.com</p>
+              <p>Phone: 8 800 598 1945</p>
+              <p id="last-str">
+                Address: Donskaya,39 St <br />
+                Moscow City, 115169
+              </p>
+            </div>
+          </div>
+          <div class="subscription">
+            <form
+              action="{{ url_for('submit_form') }}"
+              method="POST"
+              class="form"
+            >
+              <input
+                type="email"
+                id="textInput"
+                name="textInput"
+                placeholder="Email"
+                required
+              />
+              <input type="submit" value="Subscribe to news" />
+            </form>
+          </div>
+        </div>
+        <div class="copyright">
+          <p>© 2023 Positivus. All Rights Reserved.</p>
+          <div class="privat-policy">
+            <a href="#">Privacy Policy</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

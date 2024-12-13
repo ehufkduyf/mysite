@@ -1,0 +1,591 @@
+html{
+    display: flex;
+    justify-content: center;
+    overscroll-behavior: none;
+}
+
+body {
+    background: #FFFFFF; /* Устанавливает белый фон для страницы */
+    margin-top: 60px;
+    font-family: 'Space Grotesk', sans-serif; /* Устанавливает шрифт для ссылок */
+    font-style: normal; /* Устанавливает нормальный стиль шрифта */
+    font-weight: 400; /* Устанавливает нормальную жирность шрифта */
+    font-size: 20px; /* Устанавливает размер шрифта */
+    width: 1440px;
+}
+
+ul {
+    list-style-type: none; /* Убирает маркеры у списков */
+    margin: 0; /* Убирает внешние отступы */
+    padding: 0; /* Убирает внутренние отступы */
+}
+
+p {
+    margin: 0;
+}
+
+h1 {
+    /* h1 */
+    font-family: 'Space Grotesk';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 60px;
+    line-height: 77px;
+    color: #000000;
+    margin: 0;
+}
+
+h2 {
+    margin: 0;
+    font-family: 'Space Grotesk';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 51px;
+    color: #000000;
+}
+
+
+h4 {
+    margin: 0;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    margin: 0px 100px;
+}
+
+.nav_bar {
+    display: flex; /* Использует Flexbox для навигационной панели */
+    flex-direction: row; /* Располагает дочерние элементы в строку */
+    justify-content: space-between; /* Распределяет пространство между дочерними элементами */
+    align-items: center; /* Выравнивает элементы по центру по вертикали */
+    /*padding: 0px 100px; /* Устанавливает внутренние отступы (100px слева и справа) */
+}
+
+.menu {
+    display: flex; /* Использует Flexbox для меню */
+    justify-content: right; /* Выравнивает элементы по центру */
+    align-items: center; /* Выравнивает элементы по центру по вертикали */
+    /*gap: 5%; /* Устанавливает расстояние между дочерними элементами (2%) */
+}
+
+.menu ul {
+    display: flex; /* Использует Flexbox для списка в меню */
+}
+
+.menu li {
+    margin: 0 20px; /* Устанавливает горизонтальные отступы для элементов списка */
+}
+
+.menu a {
+    font-family: 'Space Grotesk', sans-serif; /* Устанавливает шрифт для ссылок */
+    font-style: normal; /* Устанавливает нормальный стиль шрифта */
+    font-weight: 400; /* Устанавливает нормальную жирность шрифта */
+    font-size: 20px; /* Устанавливает размер шрифта */
+    text-decoration: none; /* Убирает подчеркивание у ссылок */
+    color: #000000; /* Устанавливает цвет текста ссылок черным */
+    white-space: nowrap; /* Запрещает перенос текста на новую строку */
+}
+
+.button {
+    box-sizing: border-box; /* Устанавливает расчет размеров элемента с учетом padding и border */
+    display: flex; /* Использует Flexbox для кнопки */
+    align-items: flex-start; /* Выравнивает элементы по верхнему краю кнопки */
+    padding: 20px 35px; /* Устанавливает внутренние отступы (20px сверху и снизу, 35px слева и справа) */
+    border: 1px solid #191A23; /* Устанавливает границу кнопки */
+    border-radius: 14px; /* Устанавливает скругление углов кнопки */
+    font-family: 'Space Grotesk'; /* Устанавливает шрифт для текста кнопки */
+    font-style: normal; /* Устанавливает нормальный стиль шрифта */
+    font-weight: 400; /* Устанавливает нормальную жирность шрифта */
+    font-size: 20px; /* Устанавливает размер шрифта текста кнопки */
+    white-space: nowrap; /* Запрещает перенос текста на новую строку внутри кнопки */
+    color: #ffffff; /* Устанавливает цвет текста кнопки черным */
+    background: #000000; /* Устанавливает белый цвет фона кнопки */
+    margin-left: 20px;
+}
+
+.button:hover {
+    background-color: rgb(255, 255, 255); /* Изменяет цвет фона на черный при наведении на кнопку */
+    color: rgb(0, 0, 0); /* Изменяет цвет текста на белый при наведении */
+}
+
+.button:active {
+    background-color: #ace4ec; /* Изменяет цвет фона на темный при нажатии на кнопку */
+    transform: scale(0.98); /* Уменьшает размер кнопки при нажатии для эффекта нажатия */
+    border-color: #1f1f1f; /* Изменяет цвет границы на темный при нажатии */
+}
+
+.main-window {
+    display: flex;
+    flex-direction: row;
+    margin: 70px 100px 70px 100px;
+    justify-content: space-between;
+}
+
+.main-window-left {
+    width: 590px;
+}
+
+.main-window p {
+    font-family: 'Space Grotesk';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    color: #000000;
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+
+#button-1 {
+    box-sizing: border-box; /* Устанавливает расчет размеров элемента с учетом padding и border */
+    display: flex; /* Использует Flexbox для кнопки */
+    align-items: flex-start; /* Выравнивает элементы по верхнему краю кнопки */
+    padding: 20px 35px; /* Устанавливает внутренние отступы (20px сверху и снизу, 35px слева и справа) */
+    border: 1px solid #191A23; /* Устанавливает границу кнопки */
+    border-radius: 14px; /* Устанавливает скругление углов кнопки */
+    font-family: 'Space Grotesk'; /* Устанавливает шрифт для текста кнопки */
+    font-style: normal; /* Устанавливает нормальный стиль шрифта */
+    font-weight: 400; /* Устанавливает нормальную жирность шрифта */
+    font-size: 20px; /* Устанавливает размер шрифта текста кнопки */
+    white-space: nowrap; /* Запрещает перенос текста на новую строку внутри кнопки */
+    color: white; /* Устанавливает цвет текста кнопки черным */
+    background: black; /* Устанавливает белый цвет фона кнопки */
+}
+
+#button-1:hover {
+    background-color: white; /* Изменяет цвет фона на черный при наведении на кнопку */
+    color: black; /* Изменяет цвет текста на белый при наведении */
+}
+
+.long-element {
+    display: flex; /* Использует Flexbox для навигационной панели */
+    flex-direction: row; /* Располагает дочерние элементы в строку */
+    margin: 140px 100px 80px 100px;
+}
+
+.label-long-element {
+    padding: 0px 7px;
+    background: #ace4ec;
+    border-radius: 7px;
+    margin-right: 40px;
+}
+
+/* At our digital marketing agency, we offer a range of services to help businesses grow and succeed online. These services include: */
+
+.text-long-element {
+    width: 580px;
+}
+
+.text-long-element p{
+    font-family: 'Space Grotesk';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+    color: #000000;
+}
+.brands{
+    display: flex;
+    justify-content: space-between;
+    
+    
+    flex-direction: row;
+    
+    padding: 0px 100px;
+    height: 48px;
+    margin-bottom: 10px;
+    filter: grayscale(100%);
+        
+    }
+footer {
+    width: 100%;
+}
+
+.footer_nav_bar {
+    display: flex;
+    flex-direction: column;
+    padding: 55px 60px 50px;
+    margin: 140px 100px 0px 100px;
+    gap: 50px;
+    /* Dark */
+    background: #191A23;
+    border-radius: 45px 45px 0px 0px;
+}
+
+.footer_nav_bar_menu {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.logo2{
+    width: 180px;
+    height: 29px;
+}
+
+#menu-footer a{
+    font-family: 'Space Grotesk';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+    /* identical to box height */
+    text-decoration-line: underline;
+    color: #FFFFFF;
+}
+
+#menu-footer li {
+    margin: 0 20px; /* Устанавливает горизонтальные отступы для элементов списка */
+}
+
+.logo-s {
+    padding: 0px 8px 0px 0px;
+}
+
+.footer_nav_bar_info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footer_nav_bar_info_left {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-us {
+    display: flex;
+    width: fit-content;
+    padding: 0px 7px;
+    background: #ace4ec;
+    border-radius: 7px;
+    margin-bottom: 27px;
+}
+
+
+.contact-us h4 {
+    font-family: 'Space Grotesk';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 26px;
+}
+
+.info p {
+    font-family: 'Space Grotesk';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+
+#last-str {
+    margin-bottom: 0;
+}
+
+.subscription {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 58px 40px;
+    gap: 20px;
+    background: #292A32;
+    border-radius: 14px;
+}
+
+.form {
+    display: flex;
+    flex-direction: row;
+}
+
+input[type="email"] {
+    /* Field */
+
+    box-sizing: border-box;
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 22px 35px;
+    gap: 10px;
+
+    background: #292A32;
+    border: 1px solid #FFFFFF;
+    border-radius: 14px;
+
+
+    /* p */
+    font-family: 'Space Grotesk';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+    /* identical to box height */
+
+    color: #FFFFFF;
+
+    outline: none;
+    margin-right: 20px;
+
+}
+input[type="email"]:user-invalid{
+    border: 1px solid red;
+    transition: all 1s ease-in-out;
+}
+input[type="email"]:user-valid{
+    border: 1px solid green;
+    transition: all 1s ease-in-out;
+}
+input[type="submit"] {
+    /* Button */
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 20px 35px;
+    gap: 10px;
+    /* Green */
+    background: #ace4ec;
+    border-radius: 14px;
+
+    font-family: 'Space Grotesk';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    /* identical to box height, or 140% */
+    text-align: center;
+
+    /* Black */
+    color: #000000;
+    border-width: 0px;
+}
+
+input[type="submit"]:hover {
+    background-color: #ffffff;
+}
+
+.copyright {
+    display: flex;
+    flex-direction: row;
+    color: #ffffff; /* Устанавливает цвет текста ссылок черным */
+    border-top: 1px solid #FFFFFF;
+    width: 100%;
+    padding-top: 80px;
+}
+
+.privat-policy {
+    margin-left: 50px;
+}
+
+.privat-policy a {
+    color: #ffffff; /* Устанавливает цвет текста ссылок черным */
+}
+
+
+.services-block {
+
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 40px;
+
+width: 1440px;
+left: 0px;
+top: 1102px;
+
+
+}
+
+.cards-section {
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px 100px;
+gap: 40px;
+width: 1440px;
+height: 310px;
+}
+.cards-section li{
+/* Card */
+box-sizing: border-box;
+width: 600px;
+height: 310px;
+
+/* Grey */
+background: #F3F3F3;
+/* Dark */
+border: 1px solid #191A23;
+box-shadow: 0px 5px 0px #191A23;
+border-radius: 45px;
+
+
+
+}
+#headingNlink{
+/* Heading and link */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+padding: 0px;
+gap: 93px;
+
+margin: 0 auto;
+width: 221px;
+height: 210px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+}
+#headingNlink #heading{
+    /* Heading */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+
+width: 221px;
+height: 76px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+}
+#headingNlink #heading h3{
+/* Label */
+padding: 0px 7px;
+margin: 0;
+/* Green */
+background: #ace4ec;
+border-radius: 7px;
+font-size: 30px;
+
+}
+.cards-section img{
+/* Illustration */
+
+margin: 0 auto;
+width: 210px;
+height: 170px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+}
+.cards-section li{
+/* Card */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+padding: 50px;
+gap: 77px;
+
+width: 600px;
+height: 310px;
+
+/* Grey */
+background: #ace4ec;
+/* Dark */
+border: 1px solid #191A23;
+box-shadow: 0px 5px 0px #191A23;
+border-radius: 45px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+}
+.cards-section #headingNlink #link img{
+    /* Icon */
+
+width: 41px;
+height: 41px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+}
+.cards-section #headingNlink #link{
+/* Link */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 15px;
+
+width: 164px;
+height: 41px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+}
+.cards-section #headingNlink #link a{
+    /* Label */
+
+width: 108px;
+height: 28px;
+
+font-family: 'Space Grotesk';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 28px;
+/* identical to box height, or 140% */
+
+/* Black */
+color: #000000;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+}
+.cards-section #card_two{
+    background:#ace4ec ;
+}
+.cards-section #card_two #heading h3{
+    background: #ace4ec;
+}
